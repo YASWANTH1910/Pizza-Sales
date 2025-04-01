@@ -88,7 +88,7 @@ group by pizza_name
 order by Total_orders desc
 limit 5;
 
--- Bottom 5 pizzas by total Quantity
+-- Bottom 5 pizzas by total orders
 select pizza_name, sum(distinct(order_id)) as total_orders
 from pizza_sales
 group by pizza_name
